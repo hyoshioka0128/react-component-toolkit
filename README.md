@@ -19,7 +19,7 @@ The react component toolkit is a toolkit for building and testing react componen
 ---
 
 ## Features
-- Integrates with Azure Open AI allowing the creation of components from a description alone.
+- Integrates with Azure OpenAI allowing the creation of components from a description alone.
 - Can convert a react component into an Azure API Management Widget.
 - Can be tested standalone using ladle which is built into the toolkit stack.
 - Unit and code coverage testing through Jest (including snapshot testing).
@@ -44,7 +44,7 @@ Please use the Official Azure Samples github instructions to install and configu
 
 #### ⚠️ Note
 ```
-Manual installation requires .env file to be configured to enable Azure Open AI/Open AI and APIM Widget functionality.
+Manual installation requires .env file to be configured to enable Azure OpenAI/Open AI and APIM Widget functionality.
 An example .env.empty file is included, fill out the correct values and copy/rename to .env.
 If you use cross tenant AD authentication, also ensure you fill in the correct tenant id in the .env file.
 ```
@@ -63,7 +63,7 @@ Installation:
 * ```npm run rollup``` - runs ```rollup -c```.
 * ```npm run build``` - run ```npm cleanup``` followed by ```npm rollup```.
 * ```npm run test``` - run unit tests from all components (src/unittests).
-* ```npm run createnew [component_description]``` - create an AI generated component using Azure Open AI (configure via .env)
+* ```npm run createnew [component_description]``` - create an AI generated component using Azure OpenAI (configure via .env)
 * ```npm run createtemplate [component_name]``` - to create a new ready to run component template with stories and unit tests.
 * ```npm run removecomponent [component_name]``` - to delete a component and associated stories and unit tests.
 * ```npm run packagewidget [existing_component_name]``` - to package a component as a widget for Azure API Management Developer Portal.
